@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Dmrdecode : A Java program to decode DMR radio transmissions" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Dmrdecode</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/dotncarrry/DMRDecode">View on GitHub</a>
+
+          <h1 id="project_title">Dmrdecode</h1>
+          <h2 id="project_tagline">A Java program to decode DMR radio transmissions</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/dotncarrry/DMRDecode/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/dotncarrry/DMRDecode/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>The aim of this project is to provide a user friendly DMR data decoder for hobbyists.
+It is Java based so should run under Microsoft Windows , Apple and Linux PC's. The
+only hardware needed will be a radio scanner with a discriminator audio output.</p>
+
+<p>A binary version of this program which will run without being compiled is available from ..</p>
+
+<p><a href="http://borg.shef.ac.uk/dmrdecode/">http://borg.shef.ac.uk/dmrdecode/</a></p>
+
+<p>The core of the program is based around the open source DSD program by an unknown
+author. This program was written in C and runs under Linux only so my first job was to
+convert that code to Java and remove all sections that don't relate to DMR.</p>
+
+<p>Milestone 1 - To detect voice and data sync words reached (3rd September 2010)</p>
+
+<p>Milestone 2 - To reliably detect voice and data sync words. (Reached 15th October 2010)</p>
+
+<p>Milestone 3 - To decode the CACH TACT (Reached 22nd October 2010)</p>
+
+<p>Milestone 3.5 (!) - To decode the SLOT TYPE PDU (Reached 4th November 2010)</p>
+
+<p>Milestone 4 - To decode the Short LCs that make up the CACH payload. (Reached 25th November 2010)</p>
+
+<p>Milestone 5 - To work out why and then fix the problem that is causing single bit errors in frames. (Reached 14th February 2011)</p>
+
+<p>Milestone 6 - Add a feature where all DMR users are logged. (Reached 19th February 2011)</p>
+
+<p>Milestone 7 - To fix a memory leak type problem where the heap memory used by the program keeps growing until it slows down and crashes. (Reached 28th February 2011)</p>
+
+<p>Milestone 8 - To pass certain data on to other programs via TCP/IP socket. (Reached 1st March 2011)</p>
+
+<p>Build 48 - Convert the Connect Plus site ID field in SLCO 10 packets from 3 bits to 8 bits
+           Add the Utilities class to remove duplicated code.
+           Display the manufacturers name in Proprietary Data Headers.
+           Start adding build change details in this README file.</p>
+
+<p>Build 49 - Display the payload in half rate data packets both as binary and ASCII.</p>
+
+<p>Build 50 - Correctly display an 8 bit Site ID in Connect Plus SLCO 9 packets.</p>
+
+<p>Build 51 - Display Privacy Header PDUs as raw binary</p>
+
+<p>Build 52 - Fix a bug which meant that PI Header PDUs in embedded frames weren't being displayed</p>
+
+<p>Build 53 - Allows the users settings to be saved in DMRDecode_settings.xml and reloaded on start up.</p>
+
+<p>Build 54 - Adds a CPU utilization fix contributed by Chris Sams</p>
+
+<p>Build 55 - Adds an option to not view voice frames and also replaces all instances of StringBuffer
+           with StringBuilder</p>
+
+<p>Build 56 - Adds the date to the quick log.
+           Displays the data filters at the start of each log and shows any filter changes in the log file.</p>
+
+<p>From build 57 onwards Java 7 is required to run DMRDecode.</p>
+
+<p>Build 57 - Decode Connect Plus CSBKO 01 FID=6 PDUs</p>
+
+<p>Build 58 - Add a link to the new download page. Also decode Rate ¾ Data Continuation PDUs as raw binary.</p>
+
+<p>Build 59 - Display the Time Slot in Connect Plus Channel Grants (CSBKO 03 FID=6). This information was kindly
+           provided by W8EMX on the Radioreference forums. </p>
+
+<p>Ian Wraith (5th February 2013)</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Dmrdecode maintained by <a href="https://github.com/dotncarrry">dotncarrry</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
